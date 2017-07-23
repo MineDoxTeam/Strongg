@@ -1,9 +1,15 @@
 import sys
+import time
 import os
 os.chdir(os.path.realpath(sys.argv[0]).replace(os.sep + "loader.py", ""))
 import platform
 if platform.system() == "Linux":
   print("Strongg does not support Linux Devices!")
+  for i in range(100):
+    time.sleep(0.3)
+    print i
+    if i == 5:
+      sys.exit()
   
 if sys.version_info > (3,2):
   print("Update your Python version to version 3.2 or higher!")
