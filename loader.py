@@ -1,5 +1,6 @@
 import sys
 import time
+from strongg import Strongg
 import os
 os.chdir(os.path.realpath(sys.argv[0]).replace(os.sep + "loader.py", ""))
 import platform
